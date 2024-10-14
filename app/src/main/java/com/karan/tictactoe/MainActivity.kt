@@ -27,12 +27,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding.startGame.setOnClickListener {
-            check(it)
+           check(it)
         }
         binding.resetGame.setOnClickListener {
             resetGame()
         }
-
 
     }
 
@@ -63,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             val b9 = binding.btn9.text.toString()
 
             if (b1 == b2 && b2 == b3 && b3 != "") {
-                Toast.makeText(this@MainActivity, "Winner is: $b1", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Winner is: $b1", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b1)
 
             } else if (b4 == b5 && b5 == b6 && b6 != "") {
@@ -94,7 +93,7 @@ class MainActivity : AppCompatActivity() {
             } else if (b3 == b5 && b5 == b7 && b7 != "") {
                 Toast.makeText(this, "Winner is: $b3", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b3)
-            
+
             } else if (count == 9) {
                 binding.etWinner.setText("Draw")
                 Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show()
