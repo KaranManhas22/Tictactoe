@@ -65,36 +65,36 @@ class MainActivity : AppCompatActivity() {
             if (b1 == b2 && b2 == b3 && b3 != "") {
                 Toast.makeText(this@MainActivity, "Winner is: $b1", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b1)
-                resetGame()
+
             } else if (b4 == b5 && b5 == b6 && b6 != "") {
                 Toast.makeText(this, "Winner is: $b4", Toast.LENGTH_SHORT).show()
 
                 binding.etWinner.setText(b4)
-                resetGame()
+
             } else if (b7 == b8 && b8 == b9 && b9 != "") {
                 Toast.makeText(this, "Winner is: $b7", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b7)
-                resetGame()
+
             } else if (b1 == b4 && b4 == b7 && b7 != "") {
                 Toast.makeText(this, "Winner is: $b1", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b1)
-                resetGame()
+
             } else if (b2 == b5 && b5 == b8 && b8 != "") {
                 Toast.makeText(this, "Winner is: $b2", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b2)
-                resetGame()
+
             } else if (b3 == b6 && b6 == b9 && b9 != "") {
                 Toast.makeText(this, "Winner is: $b3", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b3)
-                resetGame()
+
             } else if (b1 == b5 && b5 == b9 && b9 != "") {
                 Toast.makeText(this, "Winner is: $b1", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b1)
-                resetGame()
+
             } else if (b3 == b5 && b5 == b7 && b7 != "") {
                 Toast.makeText(this, "Winner is: $b3", Toast.LENGTH_SHORT).show()
                 binding.etWinner.setText(b3)
-                resetGame()
+            
             } else if (count == 9) {
                 binding.etWinner.setText("Draw")
                 Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show()
